@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block content %}
+<h1>Item</h1>
+<p>
+    {{ objects.title }}<br>
+    {% if objects.description != None %}
+    {{ objects.description }}
+    {% else %}
+    Description  Coming soon
+    {% endif %}<br>
+    {{ objects.price }}
+</p>
+
+{% endblock %}
+
+</body>
+</html>

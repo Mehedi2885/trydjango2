@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block content_title%}
+    <title>About mehedi</title>
+    {% endblock %}
+</head>
+<br>
+
+ {% block content %}
+ <h1>Trying my best to do better in life, about</h1>
+ <P>
+     {{ my_text }}<br>
+     {{ my_number }}<br>
+</P>
+<ul>
+    {% for project in my_projects%}
+    <li>{{project}}</li>
+     {% endfor %}
+</ul>
+ {% endblock %}
+
+
+
+
+
+</body>
+</html>

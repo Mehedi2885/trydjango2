@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block content_title %}
+    <title>Bsee html presentation</title>
+    {% endblock %}
+</head>
+<body bgcolor="tan">
+ <h1 style="background-color:rgb(238, 130, 238);">This is from base html</h1>
+ {% include 'nav.html' %}
+
+ {% block content %}
+   replace me
+ {% endblock %}
+
+ {% block content_ %}
+   replace me
+ {% endblock %}
+
+</body>
+</html>
