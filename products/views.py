@@ -21,7 +21,7 @@ def product_list_view(request, *args, **kwargs):
 #         my_form = RawProductForm(request.POST)
 #         if my_form.is_valid():
 #             print(my_form.cleaned_data)
-#             Products.objects.create(**my_form.cleaned_data)
+#             Products.objects.create(**my_form.cleaned_data
 #             my_form = RawProductForm()
 #     else:
 #         my_form = RawProductForm()

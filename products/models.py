@@ -2,6 +2,9 @@ from django.db import models
 
 
 # Create your models here.
+from django.urls import reverse
+
+
 class Products(models.Model):
     title = models.CharField(max_length=200)  # max_length required
     description = models.TextField()
@@ -11,4 +14,4 @@ class Products(models.Model):
     test = models.TextField(blank=True)
 
     def get_absolute_url(self):
-        return f"/search/{self.id}"
+        return reverse("products:search-detail", kwargs={"id": self.id})  #f"/search/{self.id}"
